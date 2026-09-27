@@ -1,0 +1,38 @@
+.searchComponent {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 25%;
+}
+
+.searchComponent > input {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.7em 1.5em 0.7em 1em;
+    border-radius: 1em;
+    border: none;
+    background-color: rgb(9, 71, 9);
+    color: white;
+}
+
+.searchComponent > input::placeholder {
+    color: rgb(156, 153, 153)
+}
+
+.searchUserList {
+    background-color: rgb(46, 48, 46);
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+    margin-top: 1em;
+    border-radius: 1em;
+}
+
+.searchUserList > p {
+    font-style: italic;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid rgb(85, 84, 84);
+    font-size: 0.8em;
+}
+

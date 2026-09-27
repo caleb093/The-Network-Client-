@@ -1,0 +1,87 @@
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: center;
+    position: relative;
+}
+
+.loginPage h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.loginPage button {
+    padding: 1.4em;
+}
+.loginPage input {
+    background-color: transparent;
+    border: none;
+    padding: 1.4em;
+    color: white;
+    text-align: center;
+}
+.loginPage form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginPage input:focus {
+    outline: none;
+}
+
+.loginPage input::placeholder {
+    text-align: center;
+    font-size: 1em;
+    color: gray;
+}
+ 
+.loginPage .email {
+    /* border-bottom: 1px solid white; */
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: -2em;
+}
+
+.loginPage .password {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    /* border-right: 1px solid rgb(31, 29, 29);
+    border-top-right-radius: 2em ;
+    border-bottom-right-radius: 2em ; */
+}
+
+.loginPage .submit {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
+    transition: 0.5s;
+    /* bor */
+}
+
+.loginPage .submit:hover {
+    background-color: rgb(6, 66, 6);
+}
+
+.loginPage > p > a {
+    color: rgb(6, 222, 6);
+}
+
+.loginPage > span {
+    padding-top: 1em;
+}
+
+@media screen and (max-width: 780px) {
+    .loginPage {
+        padding-bottom: 5em;
+    }
+}

@@ -1,0 +1,103 @@
+.signupPage {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    /* text-align: center; */
+}
+
+.signupPage > p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signupPage form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signupPage form > input {
+    padding: 1em;
+    margin-bottom: 0.7em;
+    background-color: black;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.signupPage form > label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: rgb(8, 175, 8);
+    display: flex;
+}
+
+.signupPage form > label > span {
+    color: rgb(143, 142, 142);
+    font-style: italic;
+    margin-left: auto;
+    padding-right: 1em;
+}
+
+.textarea {
+    /* max-width: 100%; */
+
+    /* width: 2em; */
+    resize: none;
+    height: 6em;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 1em;
+}
+.nextBtn {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    width: 20%;
+    padding: 0.6em 1em;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+.nextBtn:disabled {
+    opacity: 0.4;
+}
+
+.btnContainer {
+    width: 100%;
+    display: flex;
+}
+
+.btnContainer button {
+    padding: 0.5em 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 3px;
+    border: none;
+    color: white;
+}
+
+.btnContainer .prevBtn {
+    background-color: blue;
+}
+
+.btnContainer .submitBtn {
+    margin-left: auto;
+    background-color: rgb(20, 122, 20);
+}
+
+.previewImage {
+    border: 1px solid rgb(141, 141, 141);
+    padding: 1em;
+    width: 100%;
+    height: min-content;
+    margin-top: 1.5em;
+}
+
+@media screen and (max-width: 780px) {
+    .signupPage {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}

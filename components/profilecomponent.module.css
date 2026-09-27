@@ -1,0 +1,65 @@
+.ProfileDisplay {
+    /* background-color: red; */
+    margin-left: 1.2em;
+    margin-right: 1.5em;
+    border: 1px solid rgb(139, 136, 136);
+    border-radius: 10px;
+    position: fixed;
+    width: 21%;
+}
+
+.imgContainer {
+    background-color: rgb(12, 92, 6);
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 3em;
+    /* position: relative; */
+    display: flex;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.8em;
+    padding-top: 0.5em;
+}
+
+.texts > hr {
+    width: 100%;
+    margin-top: 0em;
+}
+
+.texts > h3 {
+    text-align: center;
+    padding-top: 0.6em;
+}
+
+.texts > p {
+    font-size: 0.9em;
+    font-weight: lighter;
+    margin-top: 0.4em;
+}
+
+.texts > p > span {
+    color: rgb(7, 222, 7);
+}
+.imgContainer > img {
+    background-color: rgb(31, 29, 29);
+    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    border: 1px solid #06c706;
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 980px) {
+    .ProfileDisplay {
+        width: 26%;
+    }
+}
+
+

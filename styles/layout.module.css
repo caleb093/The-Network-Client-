@@ -1,0 +1,23 @@
+.layout {
+    /* background-color: red; */
+    /* display: flex;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em; */
+    display: grid;
+    grid-template-columns: 24% auto 25%;
+    margin-top: 5.5em;
+}
+
+@media screen and (max-width: 980px) {
+    .layout {
+        grid-template-columns: 30% auto;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .layout {
+        grid-template-columns: auto;
+        /* margin-left: 1em; */
+    }
+}

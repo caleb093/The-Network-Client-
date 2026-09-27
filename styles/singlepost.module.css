@@ -1,0 +1,119 @@
+.singlePostPage {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 2em;
+}
+
+.singlePost {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 8% auto;
+    /* margin-top: 2em; */
+    /* border-bottom: 1px solid rgb(189, 186, 186); */
+  }
+  
+  .imgContainer {
+    background-color: gray;
+    height: 2.8em;
+    width: 2.8em;
+    border-radius: 50%;
+    border: 2px solid rgb(7, 239, 7);
+  }
+  
+  .postDetails {
+    /* background-color: red; */
+    padding-left: 1.1em;
+}
+  
+  .postDetails > p {
+    margin-top: 0;
+    /* max-width: 32em; */
+    max-width: 85%;
+
+  }
+  
+  .postDetails > p > span {
+    color: rgb(20, 211, 20);
+    font-style: italic;
+  }
+
+.postDetails hr {
+    margin-right: 10%;
+    /* width: 85%; */
+    border: 1px solid rgb(94, 92, 92);
+    
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons > svg {
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    fill: white;
+}
+
+.icons > svg:hover {
+    fill: red;
+}
+
+.addComments {
+    display: flex;
+    width: 100%;
+    margin-top: 0.6em;
+}
+
+.addComments input {
+    padding: 0.8em 1em;
+    width: 90%;
+    color: white;
+    border: none;
+    background-color: rgb(15, 15, 15);
+}
+
+.addComments button {
+    margin-left: 1em;
+    background-color: rgb(16, 113, 16);
+    color: white;
+    border: none;
+    transition: 0.3s;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.addComments button:hover {
+    background-color: rgb(2, 56, 2);
+}
+
+.addComments button:disabled {
+  background-color: rgb(6, 41, 6);
+  opacity: 0.7;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .singlePostPage {
+      padding-top: 0.5em;
+      padding-bottom: 3.5em;
+    }
+}
+@media screen and (max-width: 450px) {
+  .postDetails {
+    /* background-color: red; */
+    padding-left: 2em;
+  }
+  .postDetails > p {
+    margin-top: 0;
+    /* max-width: 32em; */
+    max-width: 95%;
+  }
+  .postDetails hr {
+    margin-right: 5%;
+    /* width: 85%; */
+    border: 1px solid rgb(94, 92, 92);
+  }
+}
+

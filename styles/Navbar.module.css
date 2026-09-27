@@ -1,0 +1,83 @@
+.navbar {
+    /* background-color: black; */
+    padding: 0em 1em 0em 1em;
+    border-bottom: 1px solid rgb(169, 165, 165);
+    /* border-bottom: 2px; */
+    display: flex;
+    align-items: center;
+    background-color: rgb(31, 29, 29);
+    /* background-color: black; */
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+
+}
+
+.navbar > h1 {
+    cursor: pointer;
+}
+
+.navbar > h1 > span {
+    color: #1bca1b;
+}
+
+.searchIcon {
+    display: none;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25em;
+    margin-left: auto;
+}
+
+.navLinks > p:hover {
+    color: rgb(27, 202, 27);
+    cursor: pointer;
+}
+
+
+.hamburger {
+    right: 1em;
+    top: 1.2em;
+    position: absolute;
+    display: none;
+    object-fit: contain;
+    z-index: 99;
+    /* background-color: red; */
+}
+
+@media screen and (max-width: 780px) {
+    .navbar {
+        align-items: flex-start;
+        padding-bottom: 0.7em;
+    }
+    .navbar > h1 {
+        margin-top: 0.5em;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .navLinks {
+        /* background-color: red; */
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+        width: unset;
+        margin-left: auto;
+        padding-right: 1em;
+        padding-top: 2.4em;
+        padding-left: unset;
+        /* margin-left: unset; */
+    }
+
+    /* #open {
+        background-color: red;
+    } */
+}
